@@ -168,6 +168,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.List
                 if(favs.size()>0) {
                     favMovs.clear();
                     favMovs = favs;
+                    loadMovies();
                 }
                 for (int i=0; i<favMovs.size(); i++) {
                     Log.d(TAG,favMovs.get(i).getTitle());
